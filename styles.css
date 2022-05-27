@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--very-light-gray);
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--very-light-gray);
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.sedan {
+  background: var(--bright-orange);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.suv {
+  background: var(--dark-cyan);
+}
+.luxury {
+  background: var(--very-dark-cyan);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+main div {
+  width: 18.75rem;
+  height: 70vh;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+main div img {
+  width: 3.75rem;
+  height: 3.75rem;
+  object-fit: contain;
+}
+main div h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+main div p {
+  margin-top: 1rem;
+  line-height: 1.6rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+}
+
+main div button {
+  background: var(--very-light-gray);
+  border-radius: 2rem;
+  border: 1px solid var(--very-light-gray);
+  padding: 0.8rem 0;
+  font-family: "Lexend Deca", sans-serif;
+  width: 150px;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+main div button:hover {
+  background: transparent;
+  color: var(--very-light-gray);
+}
+.sedan button {
+  color: var(--bright-orange);
+}
+.suv button {
+  color: var(--dark-cyan);
+}
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+footer {
+  margin-top: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+}
+footer a {
+  color: var(--very-dark-cyan);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media (max-width: 950px) {
+  main {
+    flex-direction: column;
+    padding: 5rem 0 5rem 0;
+  }
+  main div {
+    height: 400px;
+  }
+  .sedan {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  footer {
+    margin: 1rem 0;
+  }
+}
