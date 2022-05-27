@@ -24,4 +24,4 @@ Inspirada no desafio 100 Days of code, estipulei como meta desenvolver todos os 
 <a href="https://www.frontendmentor.io/profile/carolferreiradev" target="_blank">👩‍🚀 Meu perfil no FrontendMentor</a>
 <br/>
 <br/>
-<a href="https://carolferreiradev.github.io/Challenge04_Column-preview-card-component/" target="_blank">🌎 Projeto online</a>
+<a href="https://column-preview-card-component-bice.vercel.app/" target="_blank">🌎 Projeto online</a>
