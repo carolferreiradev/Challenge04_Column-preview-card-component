@@ -5,7 +5,7 @@
 
 <p align="center">
 Home
-  <img alt="home" src="" width="100%">
+  <img alt="home" src="https://github.com/carolferreiradev/Challenge04_Column-preview-card-component/blob/master/assets/mentor04.png" width="100%">
 </p>
 
 ## 💻 Projeto
